@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="project.screen.ambulance.AmbulanceController">
+
+    <GridPane GridPane.rowIndex="0" >
+        <HBox alignment="TOP_LEFT" GridPane.columnIndex="0">
+            <Label fx:id="ambulanceText"/>
+        </HBox>
+        <padding>
+            <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+        </padding>
+    </GridPane>
+
+    <GridPane fx:id="DataGridpane" GridPane.rowIndex="1" prefHeight="Infinity" style="-fx-border-color: black; -fx-border-width: 1px;">
+        <Label fx:id="ambulanceHeader" text="Ambulance_Category" minHeight="50.0"/>
+        <GridPane.margin>
+            <Insets top="20.0" right="20.0" left="20.0" bottom="20.0"/>
+        </GridPane.margin>
+
+        <VBox fx:id="ambulanceDataVBox" alignment="CENTER" spacing="20.0" GridPane.rowIndex="1">
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+            </padding>
+        </VBox>
+        <!-- GridPane.margin should be specified within the GridPane cell constraints -->
+
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+    </GridPane>
+
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+
+
+    <GridPane GridPane.rowIndex="2">
+        <HBox alignment="BOTTOM_RIGHT" GridPane.columnIndex="1">
+            <Button fx:id="bookbutton" onAction="#bookAmbulance">Book</Button>
+        </HBox>
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS"/>
+        </rowConstraints>
+        <GridPane.margin>
+            <Insets topRightBottomLeft="20.0"/>
+        </GridPane.margin>
+    </GridPane>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="80"/>
+        <RowConstraints percentHeight="10"/>
+    </rowConstraints>
+
+</GridPane>

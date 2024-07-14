@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="project.screen.dailyrecords.DailyrecController">
+
+    <!--    <Label fx:id="text"/>-->
+
+    <GridPane GridPane.rowIndex="0">
+        <HBox  alignment="TOP_LEFT" GridPane.columnIndex="0">
+            <Label fx:id="headerText">
+            </Label>
+        </HBox>
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS"/>
+        </rowConstraints>
+        <GridPane.margin>
+            <Insets topRightBottomLeft="20.0"/>
+        </GridPane.margin>
+    </GridPane>
+
+    <GridPane GridPane.rowIndex="1">
+        <HBox alignment="TOP_LEFT" GridPane.columnIndex="0">
+            <ImageView fx:id="searchIcon" fitWidth="35" fitHeight="35">
+                <image>
+                    <Image url="https://cdn-icons-png.flaticon.com/512/6890/6890395.png"/>
+                </image>
+            </ImageView>
+            <TextField fx:id="searchBar" prefWidth="350" prefHeight="30"/>
+        </HBox>
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS"/>
+        </rowConstraints>
+        <GridPane.margin>
+            <Insets top="30.0" right="20.0" left="20.0" bottom="30.0"/>
+        </GridPane.margin>
+    </GridPane>
+
+    <GridPane GridPane.rowIndex="2">
+        <Label fx:id="dateHeader" text="Date" GridPane.columnIndex="0"/>
+        <Label fx:id="patientNameHeader" text="Patient Name" GridPane.columnIndex="1"/>
+        <Label fx:id="contactHeader" text="Contact" GridPane.columnIndex="2"/>
+        <Label fx:id="tripStartHeader" text="Trip Start" GridPane.columnIndex="3"/>
+        <Label fx:id="tripEndHeader" text="Trip End" GridPane.columnIndex="4"/>
+        <Label fx:id="HospitalHeader" text="Hospital Name" GridPane.columnIndex="5"/>
+        <Label fx:id="AmbulanceHeader" text="Ambulance Id" GridPane.columnIndex="6"/>
+        <Label fx:id="DriverHeader" text="Driver Id" GridPane.columnIndex="7"/>
+        <Label fx:id="AttenderHeader" text="Attender Id" GridPane.columnIndex="8"/>
+        <GridPane.margin>
+            <Insets top="20.0" right="20.0" left="20.0"/>
+        </GridPane.margin>
+    </GridPane>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+
+
+    <ScrollPane fx:id="dailyRecordsDataScrollPane" GridPane.rowIndex="3">
+        <VBox fx:id="dailyRecordsDataVBox" alignment="CENTER" spacing="20.0"/>
+        <GridPane.margin>
+            <Insets bottom="20.0" right="20.0" left="20.0"/>
+        </GridPane.margin>
+    </ScrollPane>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+
+
+    <rowConstraints>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="70"/>
+    </rowConstraints>
+
+
+
+
+
+</GridPane>

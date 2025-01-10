@@ -35,23 +35,3 @@ Execute the packaged JAR file or run the application from your IDE.
 JavaFX UI: Intuitive user interface developed using JavaFX, offering a seamless user experience.
 Database Integration: Interacts with Oracle Database to retrieve, store, and manage data efficiently.
 Enhanced Java 17 Features: Benefits from the latest Java language features for improved performance and code readability.
-
-# Application Screenshots
-
-![Screenshot (1178)](https://github.com/user-attachments/assets/199498fd-c53a-4347-a8c2-f9166b5fb7da)
-
-![Screenshot (1179)](https://github.com/user-attachments/assets/55c1a210-90a9-43b0-834c-40dac7116b9c)
-
-![Screenshot (1180)](https://github.com/user-attachments/assets/bcf46b23-460d-45b5-b456-f5ade234fe21)
-
-![Screenshot (1181)](https://github.com/user-attachments/assets/b75e1789-d809-4d6c-a436-c8401ec9e873)
-
-![Screenshot (1183)](https://github.com/user-attachments/assets/14fa66e9-8352-41eb-b7c7-96c787a137ac)
-
-![Screenshot (1184)](https://github.com/user-attachments/assets/c5b1178f-4fe7-41f0-82e9-0cb4c8cf05ff)
-
-![Screenshot (1185)](https://github.com/user-attachments/assets/2c986edc-ab3d-4168-bc0a-4fac372bb120)
-
-![Screenshot (1186)](https://github.com/user-attachments/assets/d471ff6b-9483-4fa7-a0e7-762f656ff199)
-
-![Screenshot (1187)](https://github.com/user-attachments/assets/1d363e85-9646-4b0b-893f-8706b387f895)
